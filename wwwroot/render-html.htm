@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <span>HTML Input</span>
+    <br/>
+    <textarea id="htmlInput" style="min-width: 400px; margin:4px 0px;"></textarea>
+    <br/>
+    <button onclick="renderHtml()">Render HTML</button>
+    <br/>
+    <p id="result"></p>
+  </body>
+  <script>
+    function renderHtml() {
+      const html = document.getElementById('htmlInput').value;
+      document.getElementById('result').innerHTML = html;
+    }
+  </script>
+</html>
